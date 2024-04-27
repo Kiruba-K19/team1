@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <title>AR.js Video Player</title>
+    <script src="aframe.min.js"></script>
+    <script src="aframe-ar.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+        <!-- team1 -->
+        <a-marker type="pattern" url="marker1.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g1_marker">
+            <!-- Video element -->
+            <a-video id="video1" src="#v1" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25"   class="clickable"
+                    gesture-handler visible="true"></a-video>
+
+        </a-marker>
+<!-- team2 -->
+        <a-marker type="pattern" url="marker2.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g2_marker">
+            <!-- Video element -->
+            <a-video id="video2" src="#v2" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+
+        </a-marker>
+<!-- team3 -->
+        <a-marker type="pattern" url="marker3.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g3_marker">
+            <!-- Video element -->
+            <a-video id="video3" src="#v3" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25"  class="clickable"
+                    gesture-handler visible="true"></a-video>
+
+        </a-marker>
+<!-- team4 -->
+        <a-marker type="pattern" url="marker4.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g4_marker">
+            <!-- Video element -->
+            <a-video id="video4" src="#v4" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25"  class="clickable"
+                    gesture-handler  visible="true"></a-video>
+
+        </a-marker>
+<!-- team5 -->
+        <a-marker type="pattern" url="marker5.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g5_marker">
+            <!-- Video element -->
+            <a-video id="video5" src="#v5" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+
+        </a-marker>
+<!-- team6 -->
+        <a-marker type="pattern" url="marker6.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g6_marker">
+            <!-- Video element -->
+            <a-video id="video6" src="#v6" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+
+        </a-marker>
+<!-- team7-->
+        <a-marker type="pattern" url="marker7.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g7_marker">
+            <!-- Video element -->
+            <a-video id="video7" src="#v7" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+
+        </a-marker>
+<!-- team8 -->
+        <a-marker type="pattern" url="marker8.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g8_marker">
+            <!-- Video element -->
+            <a-video id="video8" src="#v8" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+	
+        </a-marker>
+<!-- team9 -->
+        <a-marker type="pattern" url="marker-9.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g9_marker">
+            <!-- Video element -->
+            <a-video id="video9" src="#v9" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+	
+        </a-marker>
+<!-- team10 -->
+        <a-marker type="pattern" url="marker10.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g10_marker">
+            <!-- Video element -->
+            <a-video id="video10" src="#v10" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+
+        </a-marker>
+<!-- team11 -->
+        <a-marker type="pattern" url="marker11.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g11_marker">
+            <!-- Video element -->
+            <a-video id="video11" src="#v11" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+
+        </a-marker>
+<!-- team12 -->
+        <a-marker type="pattern" url="marker12.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g12_marker">
+            <!-- Video element -->
+            <a-video id="video12" src="#v12" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+
+        </a-marker>
+<!-- team13 -->
+        <a-marker type="pattern" url="marker13.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g13_marker">
+            <!-- Video element -->
+            <a-video id="video13" src="#v13" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+
+        </a-marker>
+<!-- team14-->
+        <a-marker type="pattern" url="marker14.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g14_marker">
+            <!-- Video element -->
+            <a-video id="video14" src="#v14" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+	
+        </a-marker>
+<!-- team15-->
+        <a-marker type="pattern" url="marker15.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g15_marker">
+            <!-- Video element -->
+            <a-video id="video15" src="#v15" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+
+        </a-marker>
+<!-- team16 -->
+        <a-marker type="pattern" url="marke16.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g16_marker">
+            <!-- Video element -->
+            <a-video id="video16" src="#v16" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+
+        </a-marker>
+<!-- team17 -->
+        <a-marker type="pattern" url="marker17.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g17_marker">
+            <!-- Video element -->
+            <a-video id="video17" src="#v17" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+  </a-marker>
+<!-- team18-->
+        <a-marker type="pattern" url="marker18.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g18_marker">
+            <!-- Video element -->
+            <a-video id="video18" src="#v18" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+  </a-marker>
+	
+<!-- team19-->
+        <a-marker type="pattern" url="marker19.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g19_marker">
+            <!-- Video element -->
+            <a-video id="video19" src="#v19" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+        </a-marker>
+<!-- team20-->
+        <a-marker type="pattern" url="marker20.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g20_marker">
+            <!-- Video element -->
+            <a-video id="video20" src="#v20" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+        </a-marker>
+<!-- team21-->
+        <a-marker type="pattern" url="marker21.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g21_marker">
+            <!-- Video element -->
+            <a-video id="video21" src="#v21" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+        </a-marker>
+<!-- team22-->
+        <a-marker type="pattern" url="marker22.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g22_marker">
+            <!-- Video element -->
+            <a-video id="video22" src="#v22" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+        </a-marker>
+<!-- team23-->
+        <a-marker type="pattern" url="marker23.patt" emitevents="true" smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"  id="g23_marker">
+            <!-- Video element -->
+            <a-video id="video23" src="#v23" width="12" height="9" position="0 0 0" rotation="-90 0 0" scale="0.25 0.25 0.25" class="clickable"
+                    gesture-handler  visible="true"></a-video>
+        </a-marker>
+
+
+
+        <a-entity camera></a-entity>
+
+        <a-assets>
+            <video id="v1" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a01.mp4" type="video/mp4"></source>
+          <video id="v2" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a02.mp4" type="video/mp4"></source>
+          <video id="v3" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a03.mp4" type="video/mp4"></source>
+          <video id="v4" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a04.mp4" type="video/mp4"></source>
+            <video id="v5" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a05.mp4" type="video/mp4"></source>
+          <video id="v6" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a06.mp4" type="video/mp4"></source>
+          <video id="v7" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a07.mp4" type="video/mp4"></source>
+          <video id="v8" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a08.mp4" type="video/mp4"></source>
+            <video id="v9" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a09.mp4" type="video/mp4"></source>
+          <video id="v10" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a10.mp4" type="video/mp4"></source>
+          <video id="v11" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a11.mp4" type="video/mp4"></source>
+          <video id="v12" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a12.mp4" type="video/mp4"></source>
+            <video id="v13" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a13.mp4" type="video/mp4"></source>
+          <video id="v14" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a014.mp4" type="video/mp4"></source>
+          <video id="v15" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a015.mp4" type="video/mp4"></source>
+          <video id="v16" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a16.mp4" type="video/mp4"></source>
+          <video id="v17" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a17.mp4" type="video/mp4"></source>
+<video id="v18" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a18.mp4" type="video/mp4"></source>
+<video id="v19" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a019.mp4" type="video/mp4"></source>
+<video id="v20" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a20.mp4" type="video/mp4"></source>
+<video id="v21" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a21.mp4" type="video/mp4"></source>
+<video id="v22" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a22.mp4" type="video/mp4"></source>
+<video id="v23" autoplay loop crossorigin="anonymous" playsinline>
+                <source src="a23.mp4" type="video/mp4"></source>
+
+        </a-assets>
+
+        <script>
+            var g1_marker = document.querySelector('#g1_marker');
+           var g2_marker = document.querySelector('#g2_marker');
+           var g3_marker = document.querySelector('#g3_marker');
+           var g4_marker = document.querySelector('#g4_marker');
+            var g5_marker = document.querySelector('#g5_marker');
+            var g6_marker = document.querySelector('#g6_marker');
+            var g7_marker = document.querySelector('#g7_marker');
+            var g8_marker = document.querySelector('#g8_marker');
+           var g9_marker = document.querySelector('#g9_marker');
+           var g10_marker = document.querySelector('#g10_marker');
+           var g11_marker = document.querySelector('#g11_marker');
+            var g12_marker = document.querySelector('#g12_marker');
+            var g13_marker = document.querySelector('#g13_marker');
+            var g14_marker = document.querySelector('#g14_marker');
+           var g15_marker = document.querySelector('#g15_marker');
+           var g16_marker = document.querySelector('#g16_marker');
+           var g17_marker = document.querySelector('#g17_marker');
+           var g18_marker = document.querySelector('#g18_marker');
+           var g19_marker = document.querySelector('#g19_marker');
+           var g20_marker = document.querySelector('#g20_marker');
+           var g21_marker = document.querySelector('#g21_marker');
+           var g22_marker = document.querySelector('#g22_marker');
+           var g23_marker = document.querySelector('#g23_marker');
+
+
+          g1_marker.addEventListener('markerFound', function () {
+                var video1 = document.querySelector('#video1');
+                video1.components.material.material.map.image.play();
+                var audio1 = document.querySelector('#audio1'); 
+                audio1.play();
+            });
+
+            g1_marker.addEventListener('markerLost', function () {
+                var video1 = document.querySelector('#video1');
+                video1.components.material.material.map.image.currentTime = 0;
+
+            });
+ g2_marker.addEventListener('markerFound', function () {
+                var video2 = document.querySelector('#video2');
+                video2.components.material.material.map.image.play();
+
+            });
+
+            g2_marker.addEventListener('markerLost', function () {
+                var video2 = document.querySelector('#video2');
+                video2.components.material.material.map.image.currentTime = 0;
+
+            });
+ g3_marker.addEventListener('markerFound', function () {
+                var video3 = document.querySelector('#video3');
+                video3.components.material.material.map.image.play();
+
+            });
+
+            g3_marker.addEventListener('markerLost', function () {
+                var video3 = document.querySelector('#video3');
+                video3.components.material.material.map.image.currentTime = 0;
+
+            });
+ g4_marker.addEventListener('markerFound', function () {
+                var video4 = document.querySelector('#video4');
+                video4.components.material.material.map.image.play();
+
+            });
+
+            g4_marker.addEventListener('markerLost', function () {
+                var video4= document.querySelector('#video4');
+                video4.components.material.material.map.image.currentTime = 0;
+
+            });
+ g5_marker.addEventListener('markerFound', function () {
+                var video5 = document.querySelector('#video5');
+                video5.components.material.material.map.image.play();
+
+            });
+
+            g5_marker.addEventListener('markerLost', function () {
+                var video5 = document.querySelector('#video5');
+                video5.components.material.material.map.image.currentTime = 0;
+
+            });
+ g6_marker.addEventListener('markerFound', function () {
+                var video6 = document.querySelector('#video6');
+                video6.components.material.material.map.image.play();
+
+            });
+
+            g6_marker.addEventListener('markerLost', function () {
+                var video6 = document.querySelector('#video6');
+                video6.components.material.material.map.image.currentTime = 0;
+
+            });
+ g7_marker.addEventListener('markerFound', function () {
+                var video7 = document.querySelector('#video7');
+                video7.components.material.material.map.image.play();
+
+            });
+
+            g7_marker.addEventListener('markerLost', function () {
+                var video7 = document.querySelector('#video7');
+                video7.components.material.material.map.image.currentTime = 0;
+
+            });
+ g8_marker.addEventListener('markerFound', function () {
+                var video8 = document.querySelector('#video8');
+                video8.components.material.material.map.image.play();
+
+            });
+
+            g8_marker.addEventListener('markerLost', function () {
+                var video8 = document.querySelector('#video8');
+                video8.components.material.material.map.image.currentTime = 0;
+
+            });
+ g9_marker.addEventListener('markerFound', function () {
+                var video9 = document.querySelector('#video9');
+                video9.components.material.material.map.image.play();
+
+            });
+
+            g9_marker.addEventListener('markerLost', function () {
+                var video9 = document.querySelector('#video9');
+                video9.components.material.material.map.image.currentTime = 0;
+
+            });
+ g10_marker.addEventListener('markerFound', function () {
+                var video10 = document.querySelector('#video10');
+                video10.components.material.material.map.image.play();
+
+            });
+
+            g10_marker.addEventListener('markerLost', function () {
+                var video10= document.querySelector('#video10');
+                video10.components.material.material.map.image.currentTime = 0;
+
+            });
+ g11_marker.addEventListener('markerFound', function () {
+                var video11 = document.querySelector('#video11');
+                video11.components.material.material.map.image.play();
+
+            });
+
+            g11_marker.addEventListener('markerLost', function () {
+                var video11 = document.querySelector('#video11');
+                video11.components.material.material.map.image.currentTime = 0;
+
+            });
+ g12_marker.addEventListener('markerFound', function () {
+                var video12 = document.querySelector('#video12');
+                video12.components.material.material.map.image.play();
+
+            });
+
+            g12_marker.addEventListener('markerLost', function () {
+                var video12 = document.querySelector('#video12');
+                video12.components.material.material.map.image.currentTime = 0;
+
+            });
+ g13_marker.addEventListener('markerFound', function () {
+                var video13 = document.querySelector('#video13');
+                video13.components.material.material.map.image.play();
+
+            });
+
+            g13_marker.addEventListener('markerLost', function () {
+                var video13= document.querySelector('#video13');
+                video13.components.material.material.map.image.currentTime = 0;
+
+            });
+ g14_marker.addEventListener('markerFound', function () {
+                var video14 = document.querySelector('#video14');
+                video14.components.material.material.map.image.play();
+            });
+
+            g14_marker.addEventListener('markerLost', function () {
+                var video14 = document.querySelector('#video14');
+                video14.components.material.material.map.image.currentTime = 0;
+
+            });
+ g15_marker.addEventListener('markerFound', function () {
+                var video15 = document.querySelector('#video15');
+                video15.components.material.material.map.image.play();
+
+            });
+
+            g15_marker.addEventListener('markerLost', function () {
+                var video15 = document.querySelector('#video15');
+                video15.components.material.material.map.image.currentTime = 0;
+
+            });
+ g16_marker.addEventListener('markerFound', function () {
+                var video16 = document.querySelector('#video16');
+                video16.components.material.material.map.image.play();
+
+            });
+
+            g16_marker.addEventListener('markerLost', function () {
+                var video16 = document.querySelector('#video16');
+                video16.components.material.material.map.image.currentTime = 0;
+
+            });
+ g17_marker.addEventListener('markerFound', function () {
+                var video17 = document.querySelector('#video17');
+                video17.components.material.material.map.image.play();
+                
+            });
+
+            g17_marker.addEventListener('markerLost', function () {
+                var video17 = document.querySelector('#video17');
+                video17.components.material.material.map.image.currentTime = 0;
+                
+            });
+ g18_marker.addEventListener('markerFound', function () {
+                var video18= document.querySelector('#video18');
+                video18.components.material.material.map.image.play();
+                
+            });
+
+            g18_marker.addEventListener('markerLost', function () {
+                var video18 = document.querySelector('#video18');
+                video18.components.material.material.map.image.currentTime = 0;
+                
+            });
+ g19_marker.addEventListener('markerFound', function () {
+                var video19= document.querySelector('#video19');
+                video19.components.material.material.map.image.play();
+                
+            });
+
+            g19_marker.addEventListener('markerLost', function () {
+                var video19 = document.querySelector('#video19');
+                video19.components.material.material.map.image.currentTime = 0;
+                
+            });
+ g20_marker.addEventListener('markerFound', function () {
+                var video20= document.querySelector('#video20');
+                video20.components.material.material.map.image.play();
+                
+            });
+
+            g20_marker.addEventListener('markerLost', function () {
+                var video20 = document.querySelector('#video20');
+                video20.components.material.material.map.image.currentTime = 0;
+                
+            });
+ g21_marker.addEventListener('markerFound', function () {
+                var video21= document.querySelector('#video21');
+                video21.components.material.material.map.image.play();
+                
+            });
+
+            g21_marker.addEventListener('markerLost', function () {
+                var video21 = document.querySelector('#video21');
+                video21.components.material.material.map.image.currentTime = 0;
+                
+            });
+
+ g22_marker.addEventListener('markerFound', function () {
+                var video22= document.querySelector('#video22');
+                video22.components.material.material.map.image.play();
+                
+            });
+
+            g22_marker.addEventListener('markerLost', function () {
+                var video22= document.querySelector('#video22');
+                video22.components.material.material.map.image.currentTime = 0;
+                
+            });
+ g23_marker.addEventListener('markerFound', function () {
+                var video23= document.querySelector('#video23');
+                video23.components.material.material.map.image.play();
+                
+            });
+
+            g23_marker.addEventListener('markerLost', function () {
+                var video23 = document.querySelector('#video23');
+                video23.components.material.material.map.image.currentTime = 0;
+                
+            });
+
+
+
+
+
+        </script>
+    </a-scene>
+</body>
+</html>
